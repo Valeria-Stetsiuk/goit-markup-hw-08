@@ -1,0 +1,39 @@
+.feature {
+    display: flex;
+}
+
+.feature__list {
+    width: 270px;
+    margin: 0 auto;
+}
+
+.feature__list:nth-last-child(-n + 4) {
+    margin-bottom: 0px;
+}
+
+.feature__box {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.feature__icon {
+    height: 70px;
+    width: 70px;
+}
+
+.feature__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.feature__text {
+    line-height: 1.71;
+}

@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+
+.list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.address {
+    font-style: normal;
+}

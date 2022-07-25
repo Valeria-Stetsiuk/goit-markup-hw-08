@@ -1,0 +1,30 @@
+// utils
+
+@import "./utils/variables";
+@import "./utils/normalize";
+@import "./utils/visually-hidden";
+
+
+// base
+@import "./base/common";
+@import "./base/reset";
+// componets
+@import "./componets/section";
+@import "./componets/container";
+@import "./componets/form";
+@import "./componets/modal";
+@import "./componets/social";
+@import "./componets/overley";
+// layoute
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/customer";
+@import "./layouts/portfolio";
+@import "./layouts/project";
+@import "./layouts/footers";
+
+
+
