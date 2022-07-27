@@ -19,25 +19,31 @@
     <!-- Шапка сторінки -->
 <header class="header__page">
     <div class="header__nav container">
-            <nav class="nav">
-                <a class="logo link" href="./index.html"> <span class="accents">Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="item"> <a class="link" href="./index.html">Студія</a></li>
-                    <li class="item"> <a class="active-page link current" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="item"> <a class="link" href="">Контакти</a></li>
-                </ul>
-            </nav>
-            <ul class="auth-nav list">
-                <li class="item"> <a class="auth-nav-content link" href="mailto:info@devstudio.com"><svg
-                            class="icon-contact">
-                            <use href="./images/icons.svg#mail"></use>
-                        </svg>info@devstudio.com</a></li>
-                <li class="item"> <a class="auth-nav-content link" href="tel:+380961111111"><svg class="icon-contact">
-                            <use href="./images/icons.svg#phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
+        <nav class="nav">
+            <a class="logo link " href="./index.html"> <span class="accents">Web</span>Studio</a>
+            <button class="menu-btn" type="button" aria-label="mobile menu button" data-menu-button>
+                <svg class="menu-btn__icon" width="40" height="40">
+                    <use class="menu-btn__open" href="./images/icons.svg#icon-menu"></use>
+                    <use class="menu-btn__close" href="./images/icons.svg#close-menu"></use>
+                </svg>
+            </button>
+            <ul class="site-nav list">
+                <li class="item"> <a href="./index.html" class=" active-page link current">Студія</a></li>
+                <li class="item"> <a class="link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="item"> <a class="link" href="">Контакти</a></li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="auth-nav list">
+            <li class="item"> <a class="auth-nav-content link" href="mailto:info@devstudio.com"><svg
+                        class="icon-contact">
+                        <use href="./images/icons.svg#mail"></use>
+                    </svg>info@devstudio.com</a></li>
+            <li class="item"> <a class="auth-nav-content link" href="tel:+380961111111"><svg class="icon-contact">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
+    </div>
+</header>
     <!--Main-->
     <main>
         <section class="section">
@@ -381,6 +387,31 @@
     
         </div>
     </footer>
+    
+    <!--  -->
+    <div class="menu" data-menu>
+        <ul class="menu-site-nav list">
+            <li class="item__text-curent"> <a href="./index.html" class=" active-page link current">Студія</a></li>
+            <li class="item__text"> <a class="active-page link current" href="./portfolio.html">Портфоліо </a></li>
+            <li class="item__text"> <a class="link" href="">Контакти</a></li>
+        </ul>
+        <ul class="menu-auth-nav list">
+            <li class="item"> <a class="auth-nav-content-mail link" href="mailto:info@devstudio.com"><svg
+                        class="icon-contact">
+                        <use href="./images/icons.svg#mail"></use>
+                    </svg>info@devstudio.com</a></li>
+            <li class="item"> <a class="auth-nav-content-tel link" href="tel:+380961111111"><svg class="icon-contact">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
+        <ul class="mobile-menu__socials list">
+            <li class="mobile-menu__item "><a href="" class="mobile-menu__link">Instagram</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Twitter</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Facebook</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">LinkedIn</a></li>
+        </ul>
+    </div>
+    <script src="./js/mobile.js"></script>
 </body>
 
 </html>
