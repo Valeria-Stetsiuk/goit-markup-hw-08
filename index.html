@@ -18,8 +18,8 @@
 
 <body>
     <!-- Шапка сторінки -->
-    <header class="header__page">
-        <!-- <div class="header__nav container">
+    <!-- <header class="header__page">
+        <div class="header__nav container">
             <nav class="nav">
                 <a class="logo link " href="./index.html"> <span class="accents">Web</span>Studio</a>
                 <ul class="site-nav list">
@@ -37,19 +37,18 @@
                             <use href="./images/icons.svg#phone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
-        </div> -->
-    </header>
+        </div>
+    </header> -->
     <main>
         <!-- Герой -->
-
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
         <!-- Особенность -->
-        <!-- <section class="section">
+        <section class="section">
             <div class=" container peculiaritys">
                 <h2 class="section-title visually-hidden">Личные преимущества</h2>
                 <ul class="feature  list ">
@@ -95,28 +94,43 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Чим ми займаємося -->
-        <!-- <section class="section work-list">
+        <section class="section work-list">
             <div class="container">
                 <h2 class="section-title centered">Чим ми займаємося</h2>
                 <ul class="work list">
                     <li class="work__item">
-                        <div class="work__tumb"><img src="./images/about-1.jpg" alt="Кодування" width="370">
+                        <div class="work__tumb">
+                            <picture>
+                                <source srcset="./images/img-1.webp 1x, ./images/img-1@2x.webp.jpg 2x">
+                                <source  srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x">
+                                <img loading="lazy" src="./images/img-1.jpg" alt="Кодування" width="370" height="294">
+                            </picture>
                             <div class="work__label">
                                 <p class="work__label-text">Десктопні додатки</p>
                             </div>
                         </div>
                     </li>
                     <li class="work__item">
-                        <div class="work__tumb"> <img src="./images/about-2.jpg" alt="Дизайн" width="370">
+                        <div class="work__tumb">
+                            <picture>
+                                <source srcset="./images/img-2.webp 1x, ./images/img-2@2x.webp.jpg 2x">
+                                <source srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x">
+                                <img loading="lazy" src="./images/img-2.jpg" alt="Кодування" width="370" height="294">
+                            </picture>
                             <div class="work__label">
                                 <p class="work__label-text">Мобільні додатки</p>
                             </div>
                         </div>
                     </li>
                     <li class="work__item">
-                        <div class="work__tumb"><img src="./images/about-3.jpg" alt="Палітра" width="370">
+                        <div class="work__tumb">
+                        <picture>
+                            <source srcset="./images/img-3.webp 1x, ./images/img-3@2x.webp.jpg 2x">
+                            <source srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x">
+                            <img loading="lazy" src="./images/img-3.jpg" alt="Кодування" width="370" height="294">
+                        </picture>
                             <div class="work__label">
                                 <p class="work__label-text">Дизайнерські рішення</p>
                             </div>
@@ -124,13 +138,28 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- Наша команда -->
-        <!-- <section class="section teams">
+        </section> 
+        <!--  Наша команда -->
+        <section class="section teams">
             <div class="container">
                 <h2 class="section-title centered">Наша команда</h2>
                 <ul class="team list">
-                    <li class="team__photo"><img src="./images/team-1.jpg" alt="Игорь" width="270">
+                    <li class="team__photo">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                            srcset="./images/team/desktop/team-1_lg.webp 1x, ./images/team/team-1_sm@2x.jpg 2x" >
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/team/desktop/team-1_lg.jpg 1x, ./images/team/desktop/team-1_lg@2x.jpg 2x">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/team/tablet/team-1_md.webp 1x, ./images/team/tablet/team-1_md@2x.webp 2x">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/team/tablet/team-1_md.jpg 1x, ./images/team/tablet/team-1_md@2x.jpg 2x">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/team/team-1_sm.webp 1x, ./images/team/team-1_sm@2x.webp 2x">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/team/team-1_sm.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x">
+                            <img loading="lazy" src="./images/team/team-1_sm.jpg" alt="Игорь" width="450" height="460">
+                        </picture>
                         <div class="team__tumb">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__subtitle">Product Designer</p>
@@ -172,7 +201,20 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team__photo"><img src="./images/team-2.jpg" alt="Ольга" width="270">
+                    <li class="team__photo">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/desktop/team-2_lg.webp 1x, ./images/team/team-2_sm@2x.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/desktop/team-2_lg.jpg 1x, ./images/team/desktop/team-2_lg@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/team/tablet/team-2_md.webp 1x, ./images/team/tablet/team-2_md@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/team/tablet/team-2_md.jpg 1x, ./images/team/tablet/team-2_md@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/team/team-2_sm.webp 1x, ./images/team/team-2_sm@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./images/team/team-2_sm.jpg 1x, ./images/team/team-2_sm@2x.jpg 2x">
+                    <img loading="lazy" src="./images/team/team-2_sm.jpg" alt="Ольга" width="450" height="460">
+                </picture>
                         <div class="team__tumb">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__subtitle">Frontend Developer</p>
@@ -214,7 +256,20 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team__photo"><img src="./images/team-3.jpg" alt="Николай" width="270">
+                    <li class="team__photo">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/team/desktop/team-3_lg.webp 1x, ./images/team/team-3_sm@2x.jpg 2x">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/team/desktop/team-3_lg.jpg 1x, ./images/team/desktop/team-3_lg@2x.jpg 2x">
+                        <source media="(min-width: 768px)"
+                            srcset="./images/team/tablet/team-3_md.webp 1x, ./images/team/tablet/team-3_md@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                            srcset="./images/team/tablet/team-3_md.jpg 1x, ./images/team/tablet/team-3_md@2x.jpg 2x">
+                        <source media="(max-width: 767px)" srcset="./images/team/team-3_sm.webp 1x, ./images/team/team-3_sm@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="./images/team/team-3_sm.jpg 1x, ./images/team/team-3_sm@2x.jpg 2x">
+                        <img loading="lazy" src="./images/team/team-3_sm.jpg" alt="Ольга" width="450" height="460">
+                    </picture>
                         <div class="team__tumb">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__subtitle">Marketing</p>
@@ -256,7 +311,20 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team__photo"><img src="./images/team-4.jpg" alt="Михаил" width="270">
+                    <li class="team__photo">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/team/desktop/team-4_lg.webp 1x, ./images/team/team-4_sm@2x.jpg 2x">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/team/desktop/team-4_lg.jpg 1x, ./images/team/desktop/team-4_lg@2x.jpg 2x">
+                        <source media="(min-width: 768px)"
+                            srcset="./images/team/tablet/team-4_md.webp 1x, ./images/team/tablet/team-4_md@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                            srcset="./images/team/tablet/team-4_md.jpg 1x, ./images/team/tablet/team-4_md@2x.jpg 2x">
+                        <source media="(max-width: 767px)" srcset="./images/team/team-4_sm.webp 1x, ./images/team/team-4_sm@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="./images/team/team-4_sm.jpg 1x, ./images/team/team-4_sm@2x.jpg 2x">
+                        <img loading="lazy" src="./images/team/team-4_sm.jpg" alt="Ольга" width="450" height="460">
+                    </picture>
                         <div class="team__tumb">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__subtitle">UI Designer</p>
@@ -300,7 +368,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Постійні клієнти -->
         <section class="section">
             <div class="container">
@@ -353,14 +421,15 @@
         </section>
     </main>
     <!-- Підвал -->
+  
     <footer class=" footers">
-        <!-- <div class="footers__addres container">
+        <div class="footers__addres container">
             <div class="footer__content">
-                <ul class="list">
+                <ul class="footer__list list">
                     <li class="">
                         <a href="./index.html" class="footers__logo link"> <span class="accents">Web</span>Studio</a>
                         <address>
-                            <ul class="footer__address">
+                            <ul class="footer__address ">
                                 <li class="footer__item"><a class="link" href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
                                         target="_blank" rel="noopener nofollow noreferrer">м. Київ, пр-т Лесі Українки,
                                         26</a></li>
@@ -373,7 +442,7 @@
                         </address>
                     </li>
                 </ul>
-            </div>
+           
             <div class="footer__social list">
                 <h2 class="footer__social-title">приєднуйтесь</h2>
                 <ul class="footer__figure list">
@@ -412,19 +481,22 @@
                     </li>
                 </ul>
             </div>
+            </div>
             <form class="footer__form">
                 <h2 class="footer__form-title">Підпишіться на розсилку</h2>
+                <div class="footer__tumb">
                 <input class="footer__form-input" type="email" name="email" placeholder="E-mail" />
                 <button class="footer__form-btn" type="submit">Підписатися<svg class="footer__send">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg></button>
+                    </div>
             </form>
 
 
-        </div> -->
+        </div>
     </footer>
     <!-- Модалка -->
-    <!-- <div class="backdrop is-hidden " data-modal>
+    <div class="backdrop is-hidden " data-modal>
         <div class="modal">
             <button class="modal__btn" type="button" data-modal-close>
                 <svg class="modal__icon">
@@ -470,7 +542,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

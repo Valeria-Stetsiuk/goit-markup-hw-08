@@ -1,24 +1,22 @@
 /*--------Container--------*/
 .container {
-    // width: 1200px;
+  // width: 1200px;
 
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    outline: 2px solid tomato;
-    // breakpoint mobile
-        @media screen and(min-width: 480px) {
-            width: 450px;
-        }
-    // breakpoint tablet
-        @media screen and(min-width: 768px) {
-            width: 768px;
-        }
-    // breakpoint desktop
-    @media screen and(min-width: 1200px) {
-        width: 1200px;
-    }
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid tomato;
+  // breakpoint mobile
+  @media screen and(min-width: 480px) {
+    width: 450px;
+  }
+  // breakpoint tablet
+  @media screen and(min-width: 768px) {
+    width: 768px;
+  }
+  // breakpoint desktop
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+  }
 }
-    
-    

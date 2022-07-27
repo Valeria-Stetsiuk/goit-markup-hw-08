@@ -22,4 +22,15 @@
 
 .section.work-list {
   padding-top: 0px;
+  @media screen and(max-width: 480px) {
+    display: none;
+  }
+  // breakpoint tablet
+  @media screen and(max-width: 1199px) {
+    display: none;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    padding-bottom: 94px;
+  }
 }
