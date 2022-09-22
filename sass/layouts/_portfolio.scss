@@ -3,8 +3,6 @@
   flex-wrap: wrap;
   row-gap: 15px;
   column-gap: 8px;
-  // padding: 0;
-  // justify-content: center;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -15,20 +13,11 @@
   }
 }
 
-// .portfolio__item {
-//   margin-right: 8px;
-// }
-
-// .portfolio__item:last-child {
-//   margin-right: 0px;
-// }
-
 /* --------Button--------*/
 
 .portfolio__button {
   display: block;
   padding: 6px 22px;
-  //   min-width: 73px;
   font-size: 16px;
   font-family: inherit;
   border: 1px solid transparent;

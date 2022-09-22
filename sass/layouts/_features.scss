@@ -7,8 +7,6 @@
 }
 
 .feature__list {
-  // width: 270px;
-  // margin: 0 auto;
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
@@ -21,10 +19,6 @@
     flex-basis: calc((100% - 90px) / 4);
   }
 }
-
-// .feature__list:nth-last-child(-n + 4) {
-//   // margin-bottom: 0px;
-// }
 
 .feature__box {
   display: flex;
